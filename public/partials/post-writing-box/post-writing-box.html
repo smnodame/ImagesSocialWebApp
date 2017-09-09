@@ -1,0 +1,35 @@
+<md-card>
+    <md-card-title>
+      <md-card-title-text>
+        <span class="md-headline">Account Preferences</span>
+        <span class="md-subhead">Tell us a little about you.</span>
+      </md-card-title-text>
+    </md-card-title>
+
+    <md-card-content>
+        <div layout-gt-sm="row">
+          <md-input-container class="md-block" flex-gt-sm="">
+              <label>Head Title</label>
+              <input ng-model="messageDetail.head">
+          </md-input-container>
+
+          <md-input-container class="md-block" flex-gt-sm="">
+              <label>Sub Title</label>
+              <input ng-model="messageDetail.sub_head">
+          </md-input-container>
+        </div>
+        <div layout-gt-sm="row">
+            <md-input-container class="md-block" flex-gt-sm="">
+              <label>Content</label>
+              <textarea ng-model="messageDetail.description"  rows="5"></textarea>
+            </md-input-container>
+        </div>
+    </md-card-content>
+
+    <md-card-actions layout="row" layout-align="end center">
+        <form>
+            <input type='file' ng-model='image' base-sixty-four-input required maxsize="500" accept="image/*">
+        </form>
+        <md-button class="md-raised md-primary" ng-click="postMessageClick()">Post</md-button>
+    </md-card-actions>
+ </md-card>

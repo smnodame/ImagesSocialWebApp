@@ -1,0 +1,10 @@
+<md-content>
+    <div class="container">
+        <post-messenger></post-messenger>
+        <div layout="column">
+            <md-card ng-repeat="post in posts | orderBy: -timestamp">
+                <messenger-details post="post"></messenger-details>
+            </md-card>
+        </div>
+    </div>
+</md-content>

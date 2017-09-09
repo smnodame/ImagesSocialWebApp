@@ -1,0 +1,23 @@
+{
+  "name": "chat",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "boonprakit <boonprakit@proteus-tech.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-loading-bar": "^0.9.0",
+    "ngstorage": "^0.3.11",
+    "angular-material": "^1.1.1",
+    "svg-assets-cache.js": "svg-assets-cache#*"
+  }
+}

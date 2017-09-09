@@ -1,0 +1,9 @@
+
+<div layout="row" layout-align="end center">
+    <span>{{like.length}} likes</span>
+    <md-button ng-click="likeClicked()" aria-label="Favorite">
+        <md-icon ng-if="!like.includes(userId)" md-svg-icon="img/icons/favorite.svg"></md-icon>
+        <md-icon ng-if="like.includes(userId)" md-svg-icon="img/icons/favorite.svg" style="color: red"></md-icon>
+
+    </md-button>
+</div>
